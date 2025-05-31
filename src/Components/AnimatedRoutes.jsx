@@ -9,7 +9,7 @@ import MainLink from './MainLink/MainLink';
 import MainLink2 from './MainLink2/MainLink2';
 import MainScroll from './MainScroll/MainScroll';
 import MainSection from './MainSection/MainSection';
-import MainSection2 from './MainSection2/Mainsection2';
+import MainSection2 from './MainSection2/MainSection2';
 import MainSection3 from './MainSection3/MainSection3';
 import MainSection4 from './MainSection4/MainSection4';
 import MainSection5 from './MainSection5/MainSection5';
