@@ -1,0 +1,225 @@
+.mainscroll-page-bg {
+  min-height: 100vh;
+  width: 100vw;
+  background: url('../../assets/scroll-bg.png') ;
+  background-size: cover;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-attachment: scroll;
+  flex-direction: column;
+}
+
+.outerbox {
+    width: 70vw;
+    height: 13vw;
+    background: radial-gradient(#FF008335 25%, #EB93C0 100%);
+    border-radius: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: #fff 0px 0px 30px; 
+}
+
+.chatbox {
+    display: flex;
+    flex-direction: column;
+    gap: 6vw;
+    padding-top: 21vw;
+
+}
+
+.pita {
+    width: 70vw;
+    height: 35px;
+    background-color: #F7A8C4;
+    box-shadow: inset 0px 0px 5px #fff, 0px 0px 30px #fff;
+    
+}
+
+.buttonbox {
+    position: absolute;
+    width: 27vw;
+    height: 65px;
+    padding: 15px;
+    border-radius: 100px;
+    background-color: #EB93C0;
+    box-shadow: inset 0px 0px 12px #fff, 0px 0px 30px #fff;
+    text-shadow: 0px 0px 10px #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.4vw;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 5px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+}
+
+.buttonbox::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -104%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: skewX(-20deg);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.buttonbox:hover::before {
+    left: 120%;
+}
+
+.buttonbox:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #fff, 0 0 40px #aaa;
+    background: #EB93C0;
+    opacity: 0.9;
+}
+
+
+
+.typing-text {
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    max-width: 62vw;
+}
+
+.photo-slider-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 14vw; 
+  
+}
+
+.custom-swiper {
+  overflow: visible;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: scale(0.8);
+  opacity: 0.6;
+}
+
+.swiper-slide-next,
+.swiper-slide-prev {
+  transform: scale(0.9);
+  opacity: 0.7;
+}
+
+.swiper-slide-active {
+  transform: scale(1.2);
+  opacity: 1;
+  z-index: 2;
+}
+
+.slide-image {
+  width: 99%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  height: 250px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  pointer-events: none;
+}
+
+.mainbutton3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 390px;
+    height: 100px;
+    margin-top: 5vw;
+    margin-bottom: 8vw;
+    opacity: 0.8;
+    background: linear-gradient(#FFA6DE 34%, #FAE1F1 100%);
+    box-shadow: 0rem 0rem 1rem #fff;
+    font-size: 25px;
+    text-shadow: #fff 0px 0px 5px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+}
+
+.mainbutton3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -104%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: skewX(-20deg);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.mainbutton3:hover::before {
+    left: 120%;
+}
+
+.mainbutton3:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #fff, 0 0 40px #aaa;
+    background: linear-gradient(#FFA6DE 34%, #FAE1F1 100%);
+}
+
+.mainbutton3 .linkicon3 {
+    font-size: 1.7vw;
+    padding: 9px 0px 0px 200px;
+    
+}
+
+.heart-button {
+  width: 400px;
+  height: 40px;
+  border: none;
+  background: radial-gradient(#FF008335 25%, #EB93C0 100%);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: #fff 0px 0px 20px;
+}
+
+.heart-button:hover {
+  transform: scale(1.1);
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}

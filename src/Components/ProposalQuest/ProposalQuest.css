@@ -1,0 +1,122 @@
+.ProposalQuest {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: end;
+  /* height: 100vh; */
+  /* text-align: center; */
+  width: 100%;
+  padding-left: 3.5vw;
+  margin-top: 7vw;
+}
+
+
+
+.ProposalQuest-page-bg {
+  min-height: 100vh;
+  width: 100vw;
+  background: url('../../assets/Ocean.mp4') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  display: flex;
+  
+}
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;        
+  pointer-events: none; 
+}
+
+.overlay10 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent black overlay */
+    z-index: 2;
+}
+
+.ProposalQuest h1,
+.ProposalQuest h2 {
+  font-size: 4vw;
+  line-height: 1.5;
+  color: transparent;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 0;
+  text-shadow: 1px 3px 2px rgb(255, 255, 255), 0 0 #000, 12px 24px 20px #000;
+  text-align: right;
+  z-index: 3;
+  opacity: 0.9;
+  padding-right: 5vw;
+}
+
+.ProposalQuest h3 {
+    font-size: 1.6vw;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    z-index: 3;
+    color: #fff;
+    text-shadow: #000 0px 0px 10px, #000 0px 0px 20px, #000 0px 0px 30px;
+    margin-top: 4vw;
+    text-align: right;
+    padding-right: 5vw;
+}
+
+.questbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 390px;
+    height: 100px;
+    background: linear-gradient(to right, #514331 0%, #786B49 100%);
+    box-shadow: 0rem 0rem 1rem #fff;
+    font-size: 25px;
+    margin-top: 100px;
+    z-index: 3;
+    margin-right: 5vw;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.questbutton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -104%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: skewX(-20deg);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.questbutton:hover::before {
+    left: 120%;
+}
+
+.questbutton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #fff, 0 0 40px #aaa;
+    background: linear-gradient(to right, #514331 0%, #786B49 100%);
+}
+
+.questbutton .questicon {
+    font-size: 1.5vw;
+    padding: 5px 0px 0px 140px;
+    z-index: 3;
+}
