@@ -1,5 +1,5 @@
 import React from 'react';
-import './MainSection.css';
+import './Mainsection.css';
 import { IoIosArrowForward } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion"
