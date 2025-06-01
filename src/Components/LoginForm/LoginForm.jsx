@@ -11,6 +11,7 @@ import { CiMenuBurger } from "react-icons/ci";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion"
 import ReactAudioPlayer from 'react-audio-player';
+import logo from '../../assets/gameku-logo.png';
 
 const LoginForm = () => {
   const navigate = useNavigate();
@@ -46,7 +47,7 @@ const LoginForm = () => {
               <text>Best Game Online Store</text>
             </div>
 
-            <img src="../../assets/gameku-logo.png" alt="Logo" className='logo' />
+            <img src= {logo} alt="Logo" className='logo' />
             <div className='icon3'>
               <IoIosSearch />
               <FaRegUser />
