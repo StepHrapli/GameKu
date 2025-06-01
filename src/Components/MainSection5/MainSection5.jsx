@@ -3,7 +3,7 @@ import './MainSection5.css';
 import { IoIosArrowForward } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import video from "../../assets/Adventure.mp4"
+import video from "../../assets/Adventure.mp4";
 
 const MainSection5 = () => {
   const navigate = useNavigate();
