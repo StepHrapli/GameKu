@@ -6,7 +6,7 @@
 .login-page-bg {
   min-height: 100vh;
   width: 100vw;
-  background: url('../../assets/bg-gameku.jpg') no-repeat center center fixed;
+  background: url('../../assets/bg-gameku.webp') no-repeat center center fixed;
   background-size: cover;
   display: flex;
   justify-content: center;

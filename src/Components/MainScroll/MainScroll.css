@@ -1,7 +1,7 @@
 .mainscroll-page-bg {
   min-height: 100vh;
   width: 100vw;
-  background: url('../../assets/scroll-bg.png') ;
+  background: url('../../assets/scroll-bg.webp') ;
   background-size: cover;
   margin: 0;
   display: flex;
