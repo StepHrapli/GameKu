@@ -2,7 +2,8 @@ import React from 'react';
 import './MainSection2.css';
 import { IoIosArrowForward } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+import video from "../../assets/Ocean.mp4";
 
 const MainSection2 = () => {
   const navigate = useNavigate();
@@ -23,7 +24,7 @@ const MainSection2 = () => {
         playsInline
         className="background-video"
       >
-        <source src="src/assets/Ocean.mp4" type="video/mp4" />
+        <source src={video} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div className="overlay2"></div>
