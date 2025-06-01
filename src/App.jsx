@@ -3,6 +3,7 @@ import { BrowserRouter, useLocation } from "react-router-dom";
 import ReactAudioPlayer from 'react-audio-player';
 import { useState, useRef, useEffect } from 'react';
 import contoh from '././assets/contoh.mp3';
+import contoh2 from '././assets/contoh2.mp3';
 
 function AudioController() {
   const location = useLocation();
@@ -12,11 +13,11 @@ function AudioController() {
   // === AUDIO MAP: mapping halaman ke file audio ===
   const audioMap = {
     '/': {contoh},
-    '/MainLink': 'src/assets/contoh.mp3',
-    '/MainLink2': 'src/assets/contoh2.mp3',
-    '/MainScroll': 'src/assets/contoh2.mp3',
-    '/MainSection3': 'src/assets/contoh.mp3',
-    '/MainSection4': 'src/assets/contoh.mp3',
+    '/MainLink': {contoh},
+    '/MainLink2': {contoh2},
+    '/MainScroll': {contoh2},
+    '/MainSection3': {contoh},
+    '/MainSection4': {contoh},
     // tambahkan mapping lain sesuai kebutuhan
   };
 
