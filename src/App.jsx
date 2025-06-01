@@ -11,7 +11,7 @@ function AudioController() {
 
   // === AUDIO MAP: mapping halaman ke file audio ===
   const audioMap = {
-    '/': contoh,
+    '/': {contoh},
     '/MainLink': 'src/assets/contoh.mp3',
     '/MainLink2': 'src/assets/contoh2.mp3',
     '/MainScroll': 'src/assets/contoh2.mp3',
