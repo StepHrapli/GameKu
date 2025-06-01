@@ -8,9 +8,13 @@ import { IoIosArrowForward } from "react-icons/io";
 import { FaHeart } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
 import { motion } from "framer-motion";
-import gambar from '../../assets/photo';
+import photo1 from '../../assets/photo1.jpg';
+import photo2 from '../../assets/photo2.jpg';
+import photo3 from '../../assets/photo3.jpg';
+import photo4 from '../../assets/photo4.jpg';
+import photo5 from '../../assets/photo5.jpg';
 
-const photos = [1, 2, 3, 4, 5];
+const photos = [photo1, photo2, photo3, photo4, photo5];
 
 const MainScroll = () => {
   const navigate = useNavigate();
@@ -101,11 +105,11 @@ const MainScroll = () => {
                 autoplay={{ delay: 2000, disableOnInteraction: false }}
                 className="custom-swiper"
               >
-                {photos.map((num) => (
-                  <SwiperSlide key={num}>
+                {photos.map((photo, index) => (
+                  <SwiperSlide key={index}>
                     <img
-                      src={gambar`${num}.jpg`}
-                      alt={`Photo ${num}`}
+                      src={photo}
+                      alt={`Photo ${index + 1}`}
                       className="slide-image"
                     />
                   </SwiperSlide>
