@@ -2,7 +2,8 @@ import React from 'react';
 import './ProposalYes.css';
 import { IoIosArrowForward } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+import video from "../../assets/Cyrodiil.mp4";
 
 const ProposalYes = () => {
   const navigate = useNavigate();
@@ -23,7 +24,7 @@ const ProposalYes = () => {
         playsInline
         className="background-video"
       >
-        <source src="src/assets/Cyrodiil.mp4" type="video/mp4" />
+        <source src={video} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div className="overlay11"></div>
