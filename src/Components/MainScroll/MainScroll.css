@@ -57,14 +57,14 @@
     font-weight: bold;
     text-align: center;
     letter-spacing: 5px;
-    /* color: white;
+    color: white;
     cursor: pointer;
     border: none;
     transition: all 0.4s ease-in-out;
-    overflow: hidden; */
+    overflow: hidden;
 }
 
-/* .buttonbox::before {
+.buttonbox::before {
     content: "";
     position: absolute;
     top: 0;
@@ -86,7 +86,7 @@
     box-shadow: 0 0 20px #fff, 0 0 40px #aaa;
     background: #EB93C0;
     opacity: 0.9;
-} */
+}
 
 
 
