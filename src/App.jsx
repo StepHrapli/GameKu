@@ -12,12 +12,12 @@ function AudioController() {
 
   // === AUDIO MAP: mapping halaman ke file audio ===
   const audioMap = {
-    '/': {contoh},
-    '/MainLink': {contoh},
-    '/MainLink2': {contoh2},
-    '/MainScroll': {contoh2},
-    '/MainSection3': {contoh},
-    '/MainSection4': {contoh},
+    '/': contoh,
+    '/MainLink': contoh,
+    '/MainLink2': contoh2,
+    '/MainScroll': contoh2,
+    '/MainSection3': contoh,
+    '/MainSection4': contoh,
     // tambahkan mapping lain sesuai kebutuhan
   };
 
