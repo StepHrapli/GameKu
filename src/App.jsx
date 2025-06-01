@@ -2,7 +2,7 @@ import AnimatedRoutes from './Components/AnimatedRoutes';
 import { BrowserRouter, useLocation } from "react-router-dom";
 import ReactAudioPlayer from 'react-audio-player';
 import { useState, useRef, useEffect } from 'react';
-import contoh from '../../assets/contoh.mp3';
+import contoh from '././assets/contoh.mp3';
 
 function AudioController() {
   const location = useLocation();
