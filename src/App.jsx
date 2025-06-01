@@ -23,8 +23,8 @@ function AudioController() {
 
   // === CONFIGURASI LAIN ===
   const audioPages = Object.keys(audioMap);
-  const hideMuteButtonPages = ['/MainLink2', '/MainSection'];
-  const stopAudioPages = ['/MainLink2', '/MainSection'];
+  const hideMuteButtonPages = [''];
+  const stopAudioPages = [''];
   const pageVolumeMap = {
     '/': 0.2,
     '/MainLink': 0.2,

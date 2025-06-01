@@ -3,17 +3,13 @@ import './MainLink2.css';
 import { IoIosArrowForward } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion"
-import ReactAudioPlayer from 'react-audio-player';
+
 
 const MainLink2 = () => {
     const navigate = useNavigate();
-    const [isMuted, setIsMuted] = useState(false);
-          const audioPlayerRef = useRef(null);
     
-          // Fungsi untuk toggle mute
-      const toggleMute = () => {
-        setIsMuted(prev => !prev);
-      };
+    
+          
 
   return (
     <motion.div 
@@ -24,14 +20,7 @@ const MainLink2 = () => {
     >
     <div className="mainlink2-page-bg">
 
-      <ReactAudioPlayer
-            ref={audioPlayerRef}
-            src="src/assets/contoh2.mp3"
-            autoPlay 
-            loop
-            muted={isMuted}
-            volume={0.2} // Set initial volume to 50%
-          />
+      
 
     <div className='main2'>
       <h1>Helloo, Callula.</h1>
@@ -57,12 +46,7 @@ const MainLink2 = () => {
 
     </div>
 
-    <button
-            className="mute-button"
-            onClick={toggleMute}
-          >
-            {isMuted ? 'Unmute' : 'Mute'}
-          </button>
+    
 
     </div> 
     </motion.div>
