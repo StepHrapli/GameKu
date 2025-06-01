@@ -46,7 +46,7 @@ const LoginForm = () => {
               <text>Best Game Online Store</text>
             </div>
 
-            <img src="src/assets/gameku-logo.png" alt="Logo" className='logo' />
+            <img src="../../assets/gameku-logo.png" alt="Logo" className='logo' />
             <div className='icon3'>
               <IoIosSearch />
               <FaRegUser />
