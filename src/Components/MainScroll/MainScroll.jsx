@@ -7,7 +7,8 @@ import 'swiper/css/autoplay';
 import { IoIosArrowForward } from "react-icons/io";
 import { FaHeart } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+import gambar from '../../assets/photo';
 
 const photos = [1, 2, 3, 4, 5];
 
@@ -103,7 +104,7 @@ const MainScroll = () => {
                 {photos.map((num) => (
                   <SwiperSlide key={num}>
                     <img
-                      src={`src/assets/photo${num}.jpg`}
+                      src={gambar`${num}.jpg`}
                       alt={`Photo ${num}`}
                       className="slide-image"
                     />
