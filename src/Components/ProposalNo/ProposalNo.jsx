@@ -3,7 +3,7 @@ import './ProposalNo.css';
 import { IoIosArrowForward } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import video from "../../assets/Cyrodiil.mp4";
+import video from "../../assets/Main.mp4";
 
 const ProposalNo = () => {
   const navigate = useNavigate();
@@ -31,8 +31,8 @@ const ProposalNo = () => {
 
       
       <div className='ProposalNo'>
-        <h1>Im Willing To Save</h1>
-        <h2>Tamriel With You</h2>
+        <h1>I Understand</h1>
+        {/* <h2>Tamriel With You</h2> */}
         <h3>Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, 
             <br/>Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum,
             <br/> Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, 

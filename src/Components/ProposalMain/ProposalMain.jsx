@@ -3,13 +3,13 @@ import './ProposalMain.css';
 import { IoIosArrowForward } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import video from "../../assets/Between.mp4";
+import video from "../../assets/Main.mp4";
 
 const ProposalMain = () => {
   const navigate = useNavigate();
   const staticText = "May I Be Your "; 
-  const dynamicTexts = ["Jeger", "Duar", "Knight", "Prince", "King", "Lord", "Husband", "Partner"];
-  const colors = ["#ffcc00", "#ff9900", "#ff6600", "#ff3300", "#cc0000", "#990000", "#660000", "#330000"];
+  const dynamicTexts = ["Lover", "Anakin Skywalker", "Partner", "Miles Morales", "Companion", "Ekko", "Tarnished", "Arthur Morgan"];
+  const colors = ["#FF83EE", "#4CB5E9", "#EA5F96", "#FA4E4E", "#FE1C98", "#38A666", "#2A473F", "#A46D35"];
   const [currentDynamicText, setCurrentDynamicText] = useState(dynamicTexts[0]);
 
   useEffect(() => {

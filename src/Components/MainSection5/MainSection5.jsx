@@ -3,7 +3,7 @@ import './MainSection5.css';
 import { IoIosArrowForward } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import video from "../../assets/Adventure.mp4";
+import video from "../../assets/Red.mp4";
 
 const MainSection5 = () => {
   const navigate = useNavigate();
@@ -31,8 +31,8 @@ const MainSection5 = () => {
 
       
       <div className='mainsection5'>
-        <h1>Im Willing To Venture Forth</h1>
-        <h2>The Land Of Ooo With You</h2>
+        <h1>Im Willing To Saddle Up Around</h1>
+        <h2>1899 Wild West With You</h2>
         <h3>Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, 
             <br/>Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum,
             <br/> Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, 
